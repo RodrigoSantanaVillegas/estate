@@ -1,0 +1,17 @@
+<odoo>
+    <record id="estate_property_view_search" model="ir.ui.view">
+        <field name="name">estate.property.view.search</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <search string="Tests">
+                <field name="name"/>
+                <field name="postcore" string="Codigo Postal"/>
+                <field name="bedrooms"/>
+                <field name="living_area"/>
+                <field name="expected_price"/>
+                <field name="selling_price"/>
+                <field name="state" string="Estado" filter_domain="['|', ('state', '=', 'nuevo'), ('state', '=', 'recibida')]"/>
+            </search>
+        </field>
+    </record>
+</odoo>
